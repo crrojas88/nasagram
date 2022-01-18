@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import Photolist from './components/Photo-list';
 import axios from 'axios';
 import './App.css';
 
 const App = () => {
 
   const [apod, setApod] = useState([])
-
-  // let url = 'https://api.nasa.gov/planetary/apod?api_key=0DcEwhhQj1GqafMMwf1RKiROabpnhQh8YTfhZCTx'
 
   const hook = () => {
     axios.get('https://api.nasa.gov/planetary/apod?api_key=0DcEwhhQj1GqafMMwf1RKiROabpnhQh8YTfhZCTx')
@@ -18,7 +17,7 @@ const App = () => {
 
   return (
     <div>
-      <img src={apod.url}/>
+      < Photolist photoInfo={apod}/>
     </div>
   );
 }
