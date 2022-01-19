@@ -18,6 +18,9 @@
     align-items: center;
     justify-content: space-between;
   }
+  .app__headerWrapper img {
+      height: 30px;
+  }
   .app__headerButtons {
     display: flex;
     column-gap: 15px;

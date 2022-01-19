@@ -12,7 +12,7 @@ const PhotoCard = ({ image, title, description, date, username, active, setActiv
                 <Avatar className='post__avatar' alt={username} src="/static/images/avatar/1.jpg"/>
                 <h1>{username}</h1>
             </div>
-                <img className="post__image" src={image} alt={title}/>
+                <img className="post__image" src={image} alt={title} title={title}/>
             <div className='post__body'>
                 <Heart isActive={active} onClick={() => {setActive(!active)}} className='post__heart'/>
                 <h2 className="post__text"><strong>{title}</strong></h2>

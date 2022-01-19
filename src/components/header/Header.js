@@ -4,19 +4,19 @@ import './header.css';
 const Header = () => {
     return(
     
-      <div className="app__header">
+      <header className="app__header">
         <div className="app__headerWrapper">
           <img
-            src=" https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
-            alt="Instagram original logo"
+            src="https://i.ibb.co/bX9cjL8/nasagram-logo.png" 
+            alt="Nasagram logo"
           />
           {/* <button className="text__button">Logout</button> */}
-          <div className="app__headerButtons">
+          {/* <div className="app__headerButtons">
             <button className="primary__button">Log in</button>
             <button className="text__button">Sign up</button>
-          </div>
+          </div> */}
         </div>
-      </div>
+      </header>
     
     )
 }
