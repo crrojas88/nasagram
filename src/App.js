@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Photolist from './components/Photo-list';
+import Photolist from './components/photo-list/Photo-list';
+import Header from './components/header/Header';
 import axios from 'axios';
 import './App.css';
 
@@ -16,7 +17,8 @@ const App = () => {
   console.log(apod)
 
   return (
-    <div>
+    <div className="app">
+      <Header/ >
       < Photolist photoInfo={apod}/>
     </div>
   );
