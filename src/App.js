@@ -7,6 +7,7 @@ import './App.css';
 const App = () => {
 
   const [apod, setApod] = useState([])
+  const [active, setActive] = useState(false)
 
   const hook = () => {
     axios.get('https://api.nasa.gov/planetary/apod?api_key=0DcEwhhQj1GqafMMwf1RKiROabpnhQh8YTfhZCTx')
@@ -19,7 +20,7 @@ const App = () => {
   return (
     <div className="app">
       <Header/ >
-      < Photolist photoInfo={apod}/>
+      < Photolist photoInfo={apod} active={active} setActive={setActive}/>
     </div>
   );
 }
