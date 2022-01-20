@@ -1,6 +1,6 @@
 # Nasagram - NASA's Astronomy Picture of the Day
 
-Welcome to NASA's next conquest - the social media space. With Nasagram, users will be able to view the day's [APOD](https://apod.nasa.gov/apod/astropix.html) in a fresh (somewhat) new way! Users will be able to leave likes as well.
+Welcome to NASA's next conquest - the social media space. With [Nasagram](https://nasagram1.herokuapp.com/), users will be able to view the day's [APOD](https://apod.nasa.gov/apod/astropix.html) in a fresh (somewhat) new way! Users will be able to leave likes as well.
 
 ![Nasagram](public/nasagram-screen.png)
 
@@ -24,3 +24,10 @@ Nasagram is still in its early stages for now, but eventually we would like to a
 
 ![Nasagram Login](./public/nasagram-login.png)
 
+## How to Launch
+
+To launch the app, you can simply view it [here](https://nasagram1.herokuapp.com/), or you can clone this repo and use 
+
+``
+npm start
+``
